@@ -1,6 +1,6 @@
-Hola, este es un rpyecto para verificar la correcta creacion de un usuario.
+Hola, este es un proyecto para verificar la correcta creacion de un usuario.
 
-El proyecto esta dividio en 3 clases: Usuario, Datos_user, AplicarMetodos.
+El proyecto esta dividido en 3 clases: Usuario, Datos_user, AplicarMetodos.
 
 La clase (AplicarMetodos) incluye los siguientes metodos:
 - Crear usuario.

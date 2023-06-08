@@ -14,10 +14,10 @@ public class ConfigSwagger {
 
     @Bean
     public OpenAPI api(){
-        return new OpenAPI().info(new Info().title("Proyecto Spring-Boot ORM - Book")
-                .version("1.0-SNAPSHOT").description("Api que se encargara de gestionar funciones de tipo Libro")
+        return new OpenAPI().info(new Info().title("Project Spring-Boot - ORM - (Book)")
+                .version("1.0-SNAPSHOT").description("Api what order of manage functions of type Book")
                 .contact(new Contact().url("https://twitter.com/Imug3tsu2").email("pabloguzman.dev@gmail.com").name("Pablo"))
-                .license(new License().name("Spring").url("url de licencia")).termsOfService("terms Of Service"));
+                .license(new License().name("Spring").url("url de license")).termsOfService("terms Of Service"));
     }
 
 }

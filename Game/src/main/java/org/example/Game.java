@@ -4,6 +4,10 @@ import lombok.experimental.UtilityClass;
 
 import java.util.Scanner;
 
+/**
+ * Esto proyecto es del juego de piedra, papel o tijeras.
+ */
+
 @UtilityClass
 public class Game {
 

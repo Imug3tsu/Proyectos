@@ -1,26 +1,30 @@
 
 package Verificacion;
 
+import lombok.experimental.UtilityClass;
+
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+@UtilityClass
 public class AplicarMetodos {
-    static Usuario user=new Usuario();
+
+    static Usuario User=new Usuario();
     static Datos_user datos_user=new Datos_user();
     static Scanner entrada=new Scanner(System.in);
-    
+
     /**
      * Crearemos el usuario por comando con Scanner, es por eso que no
      * esta como parametro del metodo.
      * Ademas he realizado una regla de instrucciones para que el correo escrito sea aceptado,
-     * mediante expresiones regulares.
+     * mediante expresiones regulares, en el metodo (Verificacion_crear_usuario).
      */
     public void Crear_usuario(/*parametro*/){
         System.out.println("\n\t..::CREAR USUARIO::..");
         System.out.println("");
-        System.out.println("Ingrese correo siguiendo el orden:"+
-                "\nletra minuscula, (1 o 2) letras mayusculas, letra minuscula, 1 simbolo, 2 numeros, @, y completar como correo normal");
+        System.out.println("Ingrese correo siguiendo el siguiente orden:"+
+                "\nletras minusculas, (1 o 2) letras mayusculas, letras minusculas, 1 simbolo, 2 numeros, @, y completar como correo normal");
         entrada.nextLine();
         String correo=entrada.nextLine();
         Verificacion_crear_usuario(correo);
@@ -29,15 +33,15 @@ public class AplicarMetodos {
     /**
      * Este metodo se encarga de crear los datos personales del usuario, sexo, edad, etc.
      * Pero para crear los datos de usuario nos pedira verificacion del mismo,
-     * tanto usuario como contraseña.
+     * tanto usuario como contraseña en el metodo (Verificacion_datos_usuario).
      */
     public void Crear_datos_usuario(){
         System.out.print("Ingrese usuario para confirmar: ");
         entrada.nextLine();
-        String User=entrada.nextLine();
+        String user=entrada.nextLine();
         System.out.print("Ingrese contraseña para confirmar: ");
         String pass=entrada.nextLine();
-        Verificacion_datos_usuario(User, pass);
+        Verificacion_datos_usuario(user, pass);
     }
 
     /**
@@ -68,7 +72,7 @@ public class AplicarMetodos {
                     Crear_usuario();
                     break;
                 case 2:
-                    if (user.getUsuario()==null){
+                    if (User.getUsuario()==null){
                         System.out.println("(Se debe crear un usuario para establecer sus datos)");
                     }else{
                         Crear_datos_usuario();
@@ -81,34 +85,31 @@ public class AplicarMetodos {
                         Mostrar_datos();
                     }
                     break;
-                case 4:
-                    break;
+                case 4: break;
                 default: System.out.println("(Error de opcion)");
             }
             
         }while(opcion!=4);
         
     }
+
+
     private void Verificacion_crear_usuario(String correo) {
-        Pattern pat=Pattern.compile("^[a-z]+([A-Z]{1,2})([a-z]+)(.{1})([0-9]{2})(@{1})([a-z]{5,7})(.{1})([a-z]{3})$");
-        Matcher mat=pat.matcher(correo);
-        System.out.println("");
-        if (mat.matches()){
-            System.out.println("(Correo correcto)");
-            System.out.println("");
+        if (correo.matches("^[a-z]+([A-Z]{1,2})([a-z]+)(.{1})([0-9]{2})(@{1})([a-z]{5,7})(.{1})([a-z]{3})$")){ // mat.matches()
+            System.out.println("(Correo correcto)\n");
             System.out.print("Ingrese usuario: ");
             String usuario=entrada.nextLine();
             System.out.print("Ingrese contraseña: ");
             String contraseña=entrada.nextLine();
-            user=new Usuario(correo, usuario, contraseña);
+            User=new Usuario(correo, usuario, contraseña);
             System.out.println("(Usuario creado)");
         }else{
             System.out.println("(Correo incorrecto)");
         }
     }
 
-    private void Verificacion_datos_usuario(String User, String pass) {
-        if (user.getUsuario().equals(User) && user.getContraseña().equals(pass)){
+    private void Verificacion_datos_usuario(String user, String pass) {
+        if (User.getUsuario().equals(user) && User.getContraseña().equals(pass)){
             System.out.print("Ingrese nombre: ");
             String nombre=entrada.nextLine();
             System.out.print("Ingrese sexo: ");
@@ -118,8 +119,8 @@ public class AplicarMetodos {
             System.out.print("Ingrese altura: ");
             double altura=entrada.nextDouble();
 
-            datos_user=new Datos_user(user.getUsuario(),user.getContraseña(),user.getCorreo(), nombre, sexo, edad, altura);
-            System.out.println("(Datos creados con excito)");
+            datos_user=new Datos_user(User.getUsuario(),User.getContraseña(),User.getCorreo(), nombre, sexo, edad, altura);
+            System.out.println("(Datos creados con exito)");
         }else{
             System.out.println("(Error, los datos son incorrectos)");
         }

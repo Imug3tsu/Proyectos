@@ -11,10 +11,10 @@ Esta api se encargara de realizar las siguientes funciones:
 - Eliminar objeto de la BBDD.
 - Eliminar todos los objetos de la BBDD.
 
-Esta api cuenta con condicionales para cumplir las pullRequest, un ejemplo de lo que se encontrara en el codigo:
+Esta api cuenta con condicionales a cumplir las request, un ejemplo de lo que se encontrara en el codigo:
 
 Ejemplo: Para modificar un objeto este no tendra que tener el mismo titulo que uno ya existente en la BBDD,
-asi como si no especificas el ID del objeto a modificar tendras error al ejecutar la pullRequest, entre otras funciones.
-Estos condcionales largaran una Excepcion del tipo(RuntimeException), que se encuentra en la clase Exception del paquete Exception.
+asi como si no especificas el ID del objeto a modificar tendras error al ejecutar la request, entre otras funcionalidades.
+Estos condicionales largaran una Excepcion del tipo(RuntimeException), que se encuentra en la clase Exception del paquete Exception.
 
 

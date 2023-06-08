@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Divine Comedy - Demo"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jScrollPane1" alignment="1" pref="717" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jScrollPane1" alignment="1" pref="644" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="&#xa;&#x9;&#x9;&#x9;  Dante Alighieri&#xa;&#x9;&#x9;                         DIVINA COMEDIA&#xa;&#xa;&#x9;              ******************************************************************&#xa;&#xa;&#x9;&#x9;&#x9;   INFIERNO&#xa;&#x9;&#x9;&#x9;    CANTO I&#xa;&#xa;&#x9;&#x9;            A mitad del camino de la vida,&#xa;&#x9;&#x9;        en una selva oscura me encontraba&#xa;&#x9;&#x9;          porque mi ruta hab&#xed;a extraviado.&#xa;&#xa;&#x9;&#x9;         &#xa1;Cu&#xe1;n dura cosa es decir cu&#xe1;l era&#xa;&#x9;&#x9;          esta salvaje selva, &#xe1;spera y fuerte&#xa;&#x9;&#x9;    que me vuelve el temor al pensamiento!&#xa;&#x9;&#x9;          Es tan amarga casi cual la muerte;&#xa;&#xa;&#x9;&#x9;    mas por tratar del bien que all&#xed; encontr&#xe9;,&#xa;&#x9;&#x9;      de otras cosas dir&#xe9; que me ocurrieron.&#xa;&#xa;&#x9;&#x9;         Yo no s&#xe9; repetir c&#xf3;mo entr&#xe9; en ella&#xa;&#x9;&#x9;    pues tan dormido me hallaba en el punto&#xa;&#x9;&#x9;        que abandon&#xe9; la senda verdadera.&#xa;&#xa;&#x9;&#x9;Mas cuando hube llegado al pie de un monte,&#xa;&#x9;&#x9;         all&#xed; donde aquel valle terminaba&#xa;&#x9;&#x9;        que el coraz&#xf3;n hab&#xed;ame aterrado,&#xa;&#xa;&#x9;&#x9;        hacia lo alto mir&#xe9;, y vi que su cima&#xa;&#x9;&#x9;          ya vest&#xed;an los rayos del planeta&#xa;&#x9;&#x9;       que lleva recto por cualquier camino.&#xa;&#xa;&#x9;&#x9;    Entonces se calm&#xf3; aquel miedo un poco,&#xa;&#x9;&#x9;      que en el lago del alma hab&#xed;a entrado&#xa;&#x9;&#x9;      la noche que pas&#xe9; con tanta angustia.&#xa;&#xa;&#x9;&#x9;       Y como quien con aliento anhelante,&#xa;&#x9;&#x9;           ya salido del pi&#xe9;lago a la orilla,&#xa;&#x9;&#x9;         se vuelve y mira al agua peligrosa,&#xa;&#xa;&#x9;&#x9;            tal mi &#xe1;nimo, huyendo todav&#xed;a, &#xa;&#x9;&#x9;        se volvi&#xf3; por mirar de nuevo el sitio&#xa;&#x9;&#x9;       que a los que viven traspasar no deja.&#xa;&#xa;&#x9;&#x9;       Repuesto un poco el cuerpo fatigado,&#xa;&#x9;&#x9;        segu&#xed; el camino por la yerma loma,&#xa;&#x9;&#x9;     siempre afirmando el pie de m&#xe1;s abajo.&#xa;&#xa;&#x9;&#x9;        Y vi, casi al principio de la cuesta,&#xa;&#x9;&#x9;            una onza ligera y muy veloz,&#xa;&#x9;&#x9;      que de una piel con pintas se cubr&#xed;a;&#xa;&#xa;&#x9;&#x9;         y de delante no se me apartaba,&#xa;&#x9;  &#x9;     mas de tal modo me cortaba el paso,&#xa;&#x9;&#x9;     que muchas veces quise dar la vuelta.&#xa;&#xa;&#x9;&#x9;       Entonces comenzaba un nuevo d&#xed;a,&#xa;&#x9;&#x9;    y el sol se alzaba al par que las estrellas&#xa;&#x9;&#x9;        que junto a &#xe9;l el gran amor divino&#xa;&#x9;&#x9;       sus bellezas movi&#xf3; por vez primera;&#xa;&#xa;&#x9;&#x9;        as&#xed; es que no auguraba nada malo&#xa;&#x9;&#x9;       de aquella fiera de la piel manchada&#xa;&#x9;&#x9;        la hora del d&#xed;a y la dulce estaci&#xf3;n;&#xa;&#xa;&#x9;&#x9;       mas no tal que terror no produjese&#xa;  &#x9;&#x9;        la imagen de un le&#xf3;n que luego vi.&#xa;&#xa;&#x9;&#x9;          Me pareci&#xf3; que contra m&#xed; ven&#xed;a,&#xa;&#x9;&#x9;       con la cabeza erguida y hambre fiera,&#xa;&#x9;&#x9;           y hasta temerle parecia el aire.&#xa;&#xa;&#x9;&#x9;           Y una loba que todo el apetito&#xa;&#x9;&#x9;            parec&#xed;a cargar en su flaqueza,&#xa;&#x9;&#x9;  que ha hecho vivir a muchos en desgracia.&#xa;&#xa;&#x9;&#x9;          Tantos pesares &#xe9;sta me produjo,&#xa;&#x9;&#x9;        con el pavor que verla me causaba&#xa;&#x9;&#x9;       que perd&#xed; la esperanza de la cumbre.&#xa;&#xa;&#x9;&#x9;      Y como aquel que alegre se hace rico&#xa;&#x9;&#x9;    y llega luego un tiempo en que se arruina,&#xa;&#x9;&#x9;       y en todo pensamiento sufre y llora:&#xa;&#xa;&#x9;&#x9;        tal la bestia me hac&#xed;a sin dar tregua,&#xa;&#x9;&#x9;     pues, viniendo hacia m&#xed; muy lentamente,&#xa;&#x9;&#x9;     me empujaba hacia all&#xed; donde el sol calla.&#xa;&#xa;&#x9;&#x9;        Mientras que yo bajaba por la cuesta,&#xa;&#x9;&#x9;          se me mostr&#xf3; delante de los ojos&#xa;&#x9;&#x9;       alguien que, en su silencio, cre&#xed; mudo.&#xa;&#xa;&#x9;&#x9;      Cuando vi a aquel en ese gran desierto&#xa;&#x9;&#x9;              &#xab;Api&#xe1;date de mi -yo le grit&#xe9;-,&#xa;&#x9;&#x9;    seas quien seas, sombra a hombre vivo.&#xbb;&#xa;&#x9;&#x9;  Me dijo: &#xab;Hombre no soy, mas hombre fui,&#xa;&#xa;&#x9;&#x9;        y a mis padres dio cuna Lombard&#xed;a&#xa;&#x9;&#x9;       pues Mantua fue la patria de los dos.&#xa;&#xa;&#x9;&#x9;         Nac&#xed; sub julio C&#xe9;sar, aunque tarde,&#xa;&#x9;&#x9;       y viv&#xed; en Roma bajo el buen Augusto:&#xa;&#x9;&#x9;       tiempos de falsos dioses mentirosos.&#xa;&#xa;&#x9;&#x9;           Poeta fui, y cant&#xe9; de aquel justo&#xa;&#x9;&#x9;       hijo de Anquises que vino de Troya,&#xa;&#x9;&#x9;     cuando Ili&#xf3;n la soberbia fue abrasada.&#xa;&#xa;&#x9;&#x9;      &#xbf;Por qu&#xe9; retornas a tan grande pena,&#xa;&#x9;&#x9;           y no subes al monte deleitoso&#xa;&#x9;&#x9;     que es principio y raz&#xf3;n de toda dicha?&#xbb;&#xa;&#xa;&#x9;&#x9;      &#xab; &#xbf;Eres Virgilio, pues, y aquella fuente&#xa;&#x9;&#x9;         de quien mana tal r&#xed;o de elocuencia?&#xa;&#x9;&#x9;        -respond&#xed; yo con frente avergonzada-.&#xa;&#xa;&#x9;&#x9;          Oh luz y honor de todos los poetas,&#xa;&#x9;&#x9;        v&#xe1;lgame el gran amor y el gran trabajo&#xa;&#x9;&#x9;   que me han hecho estudiar tu gran volumen.&#xa;&#x9;&#x9;            Eres t&#xfa; mi modelo y mi maestro;&#xa;&#xa;&#x9;&#x9;              el &#xfa;nico eres t&#xfa; de quien tom&#xe9;&#xa;&#x9;&#x9;          el bello estilo que me ha dado honra.&#xa;&#x9;&#x9;         Mira la bestia por la cual me he vuelto:&#xa;&#xa;&#x9;&#x9;          sabio famoso, de ella ponme a salvo,&#xa;&#x9;&#x9;     pues hace que me tiemblen pulso y venas.&#xbb;&#xa;&#x9;&#x9;            &#xab;Es menester que sigas otra ruta&#xa;&#xa;&#x9;&#x9;        -me repuso despu&#xe9;s que vio mi llanto-,&#xa; &#x9;&#x9;             si quieres irte del lugar salvaje;&#xa;&#x9;&#x9;          pues esta bestia, que gritar te hace,&#xa;&#xa;&#x9;&#x9;         no deja a nadie andar por su camino,&#xa;&#x9;&#x9;         mas tanto se lo impide que los mata;&#xa;&#xa;&#x9;&#x9;        y es su instinto tan cruel y tan malvado,&#xa;&#x9;&#x9;           que nunca sacia su ansia codiciosa&#xa;&#x9;&#x9;     y despu&#xe9;s de comer m&#xe1;s hambre a&#xfa;n tiene.  &#xa;&#xa;&#x9;&#x9;          Con muchos animales se amanceba,&#xa;&#x9;&#x9;         y ser&#xe1;n muchos m&#xe1;s hasta que venga&#xa;&#x9;&#x9;         el Lebrel que la har&#xe1; morir con duelo.&#xa;&#xa;&#x9;&#x9;              &#xc9;ste no comer&#xe1; tierra ni peltre,&#xa;&#x9;&#x9;                sino virtud, amor, sabidur&#xed;a,&#xa;&#x9;&#x9;          y su cuna estar&#xe1; entre Fieltro y Fieltro.&#xa;&#xa;&#x9;&#x9;           Ha de salvar a aquella humilde Italia&#xa;&#x9;&#x9;           por quien muri&#xf3; Camila, la doncella,&#xa;&#x9;&#x9;             Turno, Eur&#xed;alo y Niso con heridas.&#xa;&#xa;&#x9;&#x9;          &#xc9;ste la arrojar&#xe1; de pueblo en pueblo,&#xa;&#x9;&#x9;           hasta que d&#xe9; con ella en el abismo,&#xa;&#x9;&#x9;             del que la hizo salir el Envidioso.&#xa;&#xa;&#x9;&#x9;        Por lo que, por tu bien, pienso y decido&#xa;&#x9;&#x9;          que vengas tras de m&#xed;, y ser&#xe9; tu gu&#xed;a,&#xa;&#x9;&#x9;              y he de llevarte por lugar eterno,&#xa;&#xa;&#x9;&#x9;             donde oir&#xe1;s el aullar desesperado,&#xa;&#x9;&#x9;           ver&#xe1;s, dolientes, las antiguas sombras,&#xa;&#x9;&#x9;             gritando todas la segunda muerte;&#xa;&#xa;&#x9;&#x9;           y podr&#xe1;s ver a aquellas que contenta&#xa;&#x9;&#x9;               el fuego, pues conf&#xed;an en llegar&#xa;&#x9;&#x9;                a bienaventuras cualquier d&#xed;a;&#xa;&#xa;&#x9;&#x9;             y si ascender deseas junto a &#xe9;stas,&#xa;&#x9;&#x9;          m&#xe1;s digna que la m&#xed;a all&#xed; hay un alma:&#xa;&#x9;&#x9;             te dejar&#xe9; con ella cuando marche;&#xa;&#xa;&#x9;&#x9;         que aquel Emperador que arriba reina,&#xa;&#x9;&#x9;         puesto que yo a sus leyes fui rebelde,&#xa;&#x9;&#x9;        no quiere que por m&#xed; a su reino subas.&#xa;&#xa;&#x9;&#x9;              En toda parte impera y all&#xed; rige;&#xa;&#x9;&#x9;            all&#xed; est&#xe1; su ciudad y su alto trono.&#xa;&#xa;&#x9;&#x9;            iCu&#xe1;n feliz es quien &#xe9;l all&#xed; destina!&#xbb;&#xa;&#x9;&#x9;             Yo contest&#xe9;: &#xab;Poeta, te requiero&#xa;&#x9;&#x9;           por aquel Dios que t&#xfa; no conociste,&#xa;&#xa;&#x9;&#x9;      para huir de &#xe9;ste o de otro mal m&#xe1;s grande,&#xa;&#x9;&#x9;           que me lleves all&#xed; donde me has dicho,&#xa;&#x9;&#x9;              y pueda ver la puerta de San Pedro&#xa;&#x9;&#x9;           y aquellos infelices de que me hablas.&#xbb;&#xa;&#x9;&#x9;            Entonces se ech&#xf3; a andar, y yo tras &#xe9;l.&#xa;"/>
+            <Property name="caretPosition" type="int" value="1"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
