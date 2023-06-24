@@ -1,4 +1,4 @@
-package com.spring.SQL.Spring.Hibernate.ORM;
+package com.example.probando11;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.models.OpenAPI;
@@ -10,7 +10,8 @@ import org.springframework.context.annotation.Configuration;
 
 @OpenAPIDefinition
 @Configuration
-public class ConfigSwagger {
+public class SwaggerConfig {
+
 
     @Bean
     public OpenAPI api(){

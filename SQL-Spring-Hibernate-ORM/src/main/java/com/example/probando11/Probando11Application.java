@@ -1,13 +1,13 @@
-package com.spring.SQL.Spring.Hibernate.ORM;
+package com.example.probando11;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class Probando11Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(Probando11Application.class, args);
 	}
 
 }

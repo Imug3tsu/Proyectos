@@ -1,8 +1,8 @@
-package com.spring.SQL.Spring.Hibernate.ORM.BookService;
+package com.example.probando11.Api_REST.Service;
 
-import com.spring.SQL.Spring.Hibernate.ORM.Entity.Book;
-import com.spring.SQL.Spring.Hibernate.ORM.Exception.Exception;
-import com.spring.SQL.Spring.Hibernate.ORM.Repository.Repository;
+import com.example.probando11.Api_REST.Entidad.Book;
+import com.example.probando11.Api_REST.Excepcion.Exception;
+import com.example.probando11.Api_REST.Repo.BookRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -11,48 +11,43 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class BSIMPL implements BookService {
+public class BookService {
 
     @Autowired
-    private Repository repo;
+    private BookRepo repo;
+
     @Value("${app.message}")
     private String message;
 
 
-    @Override
-    public List<Book> AllBooks(){
+    public List<Book> allBooks(){
         return (List<Book>) this.repo.findAll();
     }
-    @Override
-    public Book createBook(Book book){
-        VerificationCreateBook(book);
+    public Book addBook(Book book){
+        verificationCreateBook(book);
         return this.repo.save(book);
     }
-    @Override
-    public Book ModifyBook(Book book){
-        VerificationModifyBook(book);
+    public Book updateBook(Book book){
+        verificationModifyBook(book);
         return this.repo.save(book);
     }
-    @Override
-    public Optional<Book> SearchBook(long id){
+    public Book searchBook(long id){
         if(!this.repo.existsById(id)){
-           throw new Exception("(Book no exist)");
+            throw new Exception("(Book no exist)");
         }
-        return this.repo.findById(id);
+        return this.repo.findById(id).get();
     }
-    @Override
     public void deleteBook(long id){
         if(!this.repo.existsById(id)){
             throw new Exception("(Book no exist)");
         }
         this.repo.deleteById(id);
     }
-    @Override
     public void deleteAllBook(){
         this.repo.deleteAll();
     }
 
-    private void VerificationCreateBook(Book book){
+    private void verificationCreateBook(Book book){
         Optional<Book> optional=this.repo.findByTitle(book.getTitle());
         if(book.getId()!=null){
             throw new Exception("(Trying to create book with ID)");
@@ -60,7 +55,7 @@ public class BSIMPL implements BookService {
             throw new Exception("(Trying to create book with same title)");
         }
     }
-    private void VerificationModifyBook(Book book){
+    private void verificationModifyBook(Book book){
         Optional<Book> optional=this.repo.findByTitle(book.getTitle());
         if(book.getId()==null){
             throw new Exception("(Trying to modify book without ID)");
